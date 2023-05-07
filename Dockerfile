@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM node:18-alpine
 
 EXPOSE 80
 COPY ./ /app
