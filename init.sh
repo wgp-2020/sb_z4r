@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export PORT=${PORT:-80}
+export UUID=${UUID:-1eb6e917-774b-4a84-aff6-b058577c60a5}
+export PATH=${PATH:-/$UUID/vless}
+
 out='{ "type": "direct" }'
 if [ -n "${WARP_KEY}" ]; then
   out='{
